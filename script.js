@@ -47,7 +47,7 @@ function showMessage(response) {
 
       // Update text content, show message, and change image source to "dance.gif"
       const yesMessage = document.getElementById("question");
-      yesMessage.innerHTML= "LESGOOO!!! </p> 🎉🎊 </p>see you on the 14th babygirl😘🥰😍";
+      yesMessage.innerHTML= "LESGOOO!!! </p> 🎉🎊 </p>YAY! can't wait to take you out, babygirl.😘🥰😍";
       document.querySelector(".image").src = "https://i.pinimg.com/originals/5a/27/71/5a2771ce1db5e81821746a3df134069b.gif";
 
       // Remove yes button
