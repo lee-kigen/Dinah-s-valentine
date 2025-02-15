@@ -1,0 +1,109 @@
+body {
+    font-family: 'Agbalumo', system-ui;
+    background-color: #ffdde1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevent content overflow */
+    background: #ffd6f4;
+    font-size: 35px;
+    color: #f18aaf;
+}
+
+.loading-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 24px;
+    color: #f18aaf;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+}
+
+.image {
+    height: 280px;
+    
+}
+
+.firstimage {
+    max-width: 100%;  /* Ensure the image doesn't exceed the container width */
+    max-height: 280px; /* Ensure the image doesn't exceed the container height */
+    width: auto;      /* Allow the image to shrink while maintaining its aspect ratio */
+    height: auto;    
+
+}
+
+.hh {
+    /* -webkit-text-stroke: 2px #71004f; */
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.pp {
+    /* -webkit-text-stroke: 2px #71004f; */
+    font-size: 30px;
+    font-style: 'Agbalumo', system-ui;
+    font-weight: 300;
+}
+
+.buttons button {
+    background-color: #f18aaf;
+    color: #e8dbfc;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 26px;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Agbalumo', system-ui;
+    
+}
+
+.buttons button:hover {
+    background-color: #7c1f37;
+    box-shadow: 0 0 0 4px rgba(38, 154, 196, 0.116), 0 0 0 8px #00000032;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+#no-button {
+}
+
+.hidden-message {
+    font-family: 'Agbalumo', system-ui;
+    color: #f18aaf;
+    display: none;
+    margin-top: 20px;
+}
+
+.move {
+    animation: moveNoMessage 0.5s linear;
+}
+
+@keyframes moveNoMessage {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(30px, 30px); }
+    50% { transform: translate(-20px, -20px); }
+    75% { transform: translate(10px, 10px); }
+    100% { transform: translate(0, 0); }
+}

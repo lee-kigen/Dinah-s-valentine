@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Great+Vibes&display=swap" rel="stylesheet">
+    <title>Valentine's Proposal</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="loading-message" id="loadingMessage">
+                <p>Hello Dinah<br>
+                You've Got Mail!</p>
+            <img class="firstimage" src="https://i.pinimg.com/736x/9e/e0/58/9ee0587361373ee2d9b93ab2167f88cb.jpg">
+            </img>
+            <p>From Leon<br>
+                click anywhere to open
+            </p>
+        </div>
+        <div class="Mainprompt" id="mainPrompt" style="display: none;">
+            <img class="image" src="https://i.pinimg.com/originals/da/b1/6c/dab16c4d12ec6f77f5e6c5ff7dc840ad.gif">
+            </img>
+            <h1 class="hh" id="name">Hey beautiful! </br>😘</h1>
+            <p class="pp" id="question">Will you be my Valentine? <br>🌸</p>
+            <div class="buttons">
+                <button id="no-button" onclick="showMessage('No')">No</button>
+                <button onclick="showMessage('Yes')" id="yesButton">Yes</button>
+            </div>
+            <div class="hidden-message" id="no-message">
+                <p>Nice try, but you can't escape that easily!</p>
+            </div>
+            <div class="hidden-message" id="yes-message">
+                <p>YAY! can't wait to take you out, babygirl.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
